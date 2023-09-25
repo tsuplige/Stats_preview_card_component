@@ -23,6 +23,7 @@ body .container_card {
   overflow: hidden;
   width: 80%;
   margin: 13%;
+  margin-top: 10%;
   margin-bottom: 5%;
 }
 body .container_card .content {
