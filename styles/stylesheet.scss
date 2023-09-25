@@ -5,7 +5,7 @@ body {
   background-color: hsl(233, 47%, 7%);
   color: white;
   font-size: 15px;
-  padding: 10%;
+//   padding: 10%;
   max-width: 1440px;
 
   
@@ -13,10 +13,16 @@ body {
     display: flex;
     flex-direction: row;
     background-color: hsl(244, 38%, 16%);
+    height: 60vh;
+    border-radius: 10px;
+    overflow: hidden;
 
     .content {
         width: 50%;
+        
     .primary_txt {
+        margin: 15% 18% 19% 10%;
+
         .primary_title {
         font-family: "Inter", sans-serif;
         font-weight: 700;
@@ -33,8 +39,10 @@ body {
     }
 
     .stat_block {
-      display: flex;
-      flex-direction: row;
+        margin: 15% 18% 19% 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
       
         .stat_Title {
             font-family: "Inter", sans-serif;
@@ -45,6 +53,7 @@ body {
             font-family: "Lexend Deca", sans-serif;
             font-weight: 400;
             color: hsla(0, 0%, 100%, 0.6);
+            text-transform: uppercase;
         }
     }
     }
@@ -54,9 +63,16 @@ body {
 
   .img_block {
     width: 50%;
+    height: 100%;
+    background-image: url('../images/image-header-desktop.jpg'); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
+    background-size: cover;
+    background-clip: border-box;
+    // border-radius: 0  10px 10px 0;
+    // object-fit: ;
 
-    img {
-      // content: url('../images/image-header-desktop.jpg');
+    #color_img {
+        background-color: hsla(277, 41%, 45%, 0.466);
+        height: 100%;
     }
   }
 }

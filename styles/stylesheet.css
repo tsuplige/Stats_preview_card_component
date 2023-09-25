@@ -4,16 +4,21 @@ body {
   background-color: hsl(233, 47%, 7%);
   color: white;
   font-size: 15px;
-  padding: 10%;
   max-width: 1440px;
 }
 body .container {
   display: flex;
   flex-direction: row;
   background-color: hsl(244, 38%, 16%);
+  height: 60vh;
+  border-radius: 10px;
+  overflow: hidden;
 }
 body .container .content {
   width: 50%;
+}
+body .container .content .primary_txt {
+  margin: 15% 18% 19% 10%;
 }
 body .container .content .primary_txt .primary_title {
   font-family: "Inter", sans-serif;
@@ -28,8 +33,10 @@ body .container .content .primary_txt p {
   font-weight: 400;
 }
 body .container .content .stat_block {
+  margin: 15% 18% 19% 10%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 body .container .content .stat_block .stat_Title {
   font-family: "Inter", sans-serif;
@@ -39,7 +46,16 @@ body .container .content .stat_block .stat_description {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
 }
 body .img_block {
   width: 50%;
+  height: 100%;
+  background-image: url("../images/image-header-desktop.jpg"); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
+  background-size: cover;
+  background-clip: border-box;
+}
+body .img_block #color_img {
+  background-color: hsla(277, 41%, 45%, 0.466);
+  height: 100%;
 }/*# sourceMappingURL=stylesheet.css.map */
