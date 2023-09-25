@@ -2,77 +2,95 @@
 @import url(https://fonts.google.com/specimen/Lexend+Deca);
 
 body {
-  background-color: hsl(233, 47%, 7%);
-  color: white;
-  font-size: 15px;
-//   padding: 10%;
-  max-width: 1440px;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    max-width: 1440px;
+    max-height: 100vh;
+    margin: 0;
 
-  
-  .container {
-    display: flex;
-    flex-direction: row;
-    background-color: hsl(244, 38%, 16%);
-    height: 60vh;
-    border-radius: 10px;
-    overflow: hidden;
-
-    .content {
-        width: 50%;
-        
-    .primary_txt {
-        margin: 15% 18% 19% 10%;
-
-        .primary_title {
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-
-        span {
-            color: hsl(277, 64%, 61%);
-        }
-        }
-        p {
-        font-family: "Inter", sans-serif;
-        color: hsla(0, 0%, 100%, 0.75);
-        font-weight: 400;
-        }
+    p {
+        font-size: 15px;
     }
 
-    .stat_block {
-        margin: 15% 18% 19% 10%;
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container_card {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-      
-        .stat_Title {
-            font-family: "Inter", sans-serif;
-            font-weight: 700;
+        background-color: hsl(244, 38%, 16%);
+        height: 60vh;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 80%;
+        margin: 13%;
+        margin-bottom: 5%;
+
+
+        .content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .primary_txt {
+                margin: 8% 18% 0 10%;
+
+                .primary_title {
+                    font-family: "Inter", sans-serif;
+                    font-weight: 700;
+                    font-size: 40px;
+                    span {
+                        color: hsl(277, 64%, 61%);
+                    }
+                }
+
+                p {
+                    font-family: "Inter", sans-serif;
+                    color: hsla(0, 0%, 100%, 0.75);
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+
+            .stat_block {
+                margin: 0 18% 5% 10%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .stat_Title {
+                    font-family: "Inter", sans-serif;
+                    margin: 0;
+                    font-weight: 700;
+                }
+
+                .stat_description {
+                    font-family: "Lexend Deca", sans-serif;
+                    font-weight: 400;
+                    color: hsla(0, 0%, 100%, 0.6);
+                    text-transform: uppercase;
+                }
+            }
         }
 
-        .stat_description {
-            font-family: "Lexend Deca", sans-serif;
-            font-weight: 400;
-            color: hsla(0, 0%, 100%, 0.6);
-            text-transform: uppercase;
-        }
-    }
     }
 
-  }
 
-
-  .img_block {
-    width: 50%;
-    height: 100%;
-    background-image: url('../images/image-header-desktop.jpg'); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
-    background-size: cover;
-    background-clip: border-box;
-    // border-radius: 0  10px 10px 0;
-    // object-fit: ;
-
-    #color_img {
-        background-color: hsla(277, 41%, 45%, 0.466);
+    .img_block {
+        width: 50%;
         height: 100%;
+        background-image: url('../images/image-header-desktop.jpg');
+        /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
+        background-size: cover;
+        background-clip: border-box;
+        // border-radius: 0  10px 10px 0;
+        // object-fit: ;
+
+        #color_img {
+            background-color: hsla(277, 41%, 45%, 0.466);
+            height: 100%;
+        }
     }
-  }
 }
